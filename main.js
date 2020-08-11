@@ -54,6 +54,21 @@ const buildProductCards = (arr) => {
     let domString = '';
 
     for (let i = 0; i < arr.length; i++) {
-        domString +=
+        domString += `<div class="card m-4" style="width: 18rem;">
+                        <img src="${allJeans[i].imageUrl}" class="card-img-top" alt="${allJeans[i].name}">
+                        <div class="card-body">
+                            <h5 class="product-name">${allJeans[i].name}</h5>
+                            <p class="available-sizes">Available Sizes</p>
+                            <p class="card-sizes">${allJeans[i].sizesAvailable.join('  ')}</p>
+                        </div>
+                    </div>`
     }
+
+    printToDom('productContainerShop', domString);
 }
+
+const init = () => {
+    buildProductCards(allJeans);
+}
+
+init();
