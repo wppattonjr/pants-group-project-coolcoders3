@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Spill The Jeans</a>
+      <a class="navbar-brand" href="index.html">Spill The Jeans</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,12 +31,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Shop <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="shop.html"
+              >Shop<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
 
           <li class="nav-item">
@@ -445,13 +445,20 @@
           </div>
         </div>
       </div>
-      <div class="funFactsAbout d-flex flex-column align-items-center">
-        <div class="factsButtonAbout">
-          <button type="button" class="btn btn-outline-danger">
+      <div class="funFactsAbout d-flex flex-column justify-content-center">
+        <div class="factsButtonAbout align-items-center">
+          <button
+            type="button"
+            class="btn btn-outline-danger m-3"
+            id="factsButtonAbout"
+          >
             Fun Facts
           </button>
+          <p class="text-align-center m-3">
+            Click this button for a random fun fact about jeans!
+          </p>
         </div>
-        <div class="factsCardsAbout">This is where a card would go</div>
+        <div id="factsCardAbout"></div>
       </div>
     </main>
     <script
