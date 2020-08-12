@@ -199,25 +199,36 @@ const locations = [
         hours: {
             weekdays: '10am - 7pm',
             weekends: '11am - 5pm'
-        }
+        },
+        id: 'TN'
     },
     {
         imageUrl: '/images/chicago',
         city: 'Chicago',
-        address: '312 Main Street Chicago, IL'
+        address: '312 Main Street Chicago, IL',
+        id: 'IL'
     },
     {
         imageUrl: '/images/NY',
         city: 'New York',
-        address: '480 Madison Avenue, NY',
+        address: '480 Madison Avenue NY, NY',
         hours: {
-            weekdays: '10am - 7pm',
-            weekends: '11am - 5pm'
-        }
-    },       
-
-
-]
+            weekdays: '10am - 9pm',
+            weekends: '12pm - 6pm'
+        },
+        id: 'NY'
+    },
+    {
+        imageUrl: '/images/LA',
+        city: 'Los Angeles',
+        address: '9876 Sunset Blvd Los Angeles, CA',
+        hours: {
+            weekdays: '9am - 6pm',
+            weekends: '10pm - 4pm'
+        },
+        id: 'CA'
+    }          
+];
 
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
@@ -250,7 +261,15 @@ const mapHover = (state) => {
     document.querySelector(state).addEventListener('hover', colorState)
 }
 
-const displayLocationCard
+const displayLocationCard = (e) => {
+    const locationId = e.target.id;
+    domString = ''
+    for (i = 0; i < locations.length ; i++) {
+        if (locationId === locations[i].id) {
+
+        }
+    }
+}
 
 
 const funFactsButtonClick = () => {
