@@ -191,6 +191,34 @@ const allJeans = [
   },
 ];
 
+const locations = [
+    {
+        imageUrl: '/images/nashville',
+        city: 'Nashville',
+        address: '1234 5th Street Nashville, TN',
+        hours: {
+            weekdays: '10am - 7pm',
+            weekends: '11am - 5pm'
+        }
+    },
+    {
+        imageUrl: '/images/chicago',
+        city: 'Chicago',
+        address: '312 Main Street Chicago, IL'
+    },
+    {
+        imageUrl: '/images/NY',
+        city: 'New York',
+        address: '480 Madison Avenue, NY',
+        hours: {
+            weekdays: '10am - 7pm',
+            weekends: '11am - 5pm'
+        }
+    },       
+
+
+]
+
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
@@ -216,6 +244,14 @@ const buildProductCards = (arr) => {
 
   printToDom("productContainerShop", domString);
 };
+
+const mapHover = (state) => {
+    document.querySelector(state).addEventListener('hover', displayLocationCard);
+    document.querySelector(state).addEventListener('hover', colorState)
+}
+
+const displayLocationCard
+
 
 const funFactsButtonClick = () => {
   document
