@@ -288,9 +288,9 @@ const buildJeanImageCollage = (jeanCollageArray) => {
   let domString ='';
 
   for (let j = 0; j < collageOfJeans.length; j++) {
-      domString += `<div style=“width: 20rem;” id=“${j}”>
+      domString += `<div id=“${j}”>
                       <div>
-                      <div class=“image-container” style=“background-image”><img src=${collageOfJeans[j].jeanImage}></div>   
+                      <div class=“image-container”><img src=${collageOfJeans[j].jeanImage}></div>   
                       </div>
                   </div>`
   }
