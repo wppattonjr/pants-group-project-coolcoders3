@@ -17,3 +17,8 @@ body {
     
   }
   
+  .card-block {
+      border-style: solid;
+      border-color: FF8A5B;  
+      
+  }

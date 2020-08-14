@@ -1,6 +1,9 @@
 "use strict";
 //--------------------- CHECKOUT PAGE JS---------------------------------------//
 var shoppingCart = (function () {
+     // =============================
+  // Private methods and propeties
+  // =============================
   cart = [];
 
   // Constructor
