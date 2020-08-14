@@ -1,108 +1,241 @@
-<!-- <section class="container content-section">
-    <h2 class="section-header">JEANS</h2>
-    <class="shop-items">
-        <div class="shop-item">
-            <span class="shop-item-title">Mid Rise Skinny Jeans</span>
-            <img class="shop-item-image" src="'images/midRiseSkinny'">
-            <div class="shop-item-details">
-                <span class="shop-item-price">49.95</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill The Jeans</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Spill The Jeans</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="shop.html"
+              >Shop<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="false"
+              >Checkout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="jeanCollage" class="d-flex flex-wrap"></div>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+      <div class="row">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            Cart (<span class="total-count"></span>)</button
+          ><button class="clear-cart btn btn-danger">Clear Cart</button>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">High Rise Skinny Jeans</span>
-            <img class="shop-item-image" src="images/highRiseSkinny">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$79.95</span>
-                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            
+            <div class="card-block">
+              <h4 class="card-title">Mid Rise Skinny Jeans</h4>
+              <p class="card-text">Price: $49.95</p>
+              <a
+                href="#"
+                data-name="skinny jeans"
+                data-price="49.95"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
             </div>
+          </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Mid Rise Distressed Jeans</span>
-            <img class="shop-item-image" src="images/midRiseDistressed">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$89.95</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+           
+            <div class="card-block">
+              <h4 class="card-title">High Rise Skinny Jeans</h4>
+              <p class="card-text">Price: $79.95</p>
+              <a
+                href="#"
+                data-name="skinny jeans2"
+                data-price="79.95"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
             </div>
+          </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">High Rise Distressed Jeans</span>
-            <img class="shop-item-image" src="images/midRiseDistressed'">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$89.95</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            
+            <div class="card-block">
+              <h4 class="card-title">Mid Rise Distressed Jeans</h4>
+              <p class="card-text">Price: $89.95</p>
+              <a
+                href="#"
+                data-name="distressed jeans"
+                data-price="89.95"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
             </div>
+          </div>
         </div>
-     <span class="shop-item-title">Mid Rise Flare Jeans</span>
-            <img class="shop-item-image" src="images/midRiseFlare">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$89.95</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+              
+              <div class="card-block">
+                <h4 class="card-title">High Rise Distressed Jeans</h4>
+                <p class="card-text">Price: $79.95</p>
+                <a
+                  href="#"
+                  data-name="distressed jeans2"
+                  data-price="89.95"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">High Rise Flare Jeans</span>
-            <img class="shop-item-image" src="images/highRiseFlare">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$109.95</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="container content-section">
-    <h2 class="section-header">CART</h2>
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">ITEM</span>
-        <span class="cart-price cart-header cart-column">PRICE</span>
-        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-    </div>
-    <div class="cart-items">
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="images/highRiseFlare" width="100" height="100">
-                <span class="cart-item-title">High Rise Flare Jeans</span>
-            </div>
-            <span class="cart-price cart-column">$109.95</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="images/highRiseFlare" width="100" height="100">
-                <span class="cart-item-title">High Rise Flare Jeans</span>
-            </div>
-            <span class="cart-price cart-column">$89.95</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>
-    </div>
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$199.9</span>
-    </div>
-    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-</section>
-</div>  -->
+          </div>
 
 
-<form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+              
+              <div class="card-block">
+                <h4 class="card-title">High Rise Flare Jeans</h4>
+                <p class="card-text">Price: $109.95</p>
+                <a
+                  href="#"
+                  data-name="flare jeans"
+                  data-price="89.95"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+              
+              <div class="card-block">
+                <h4 class="card-title">Mid Rise Flare Jeans</h4>
+                <p class="card-text">Price: $89.95</p>
+                <a
+                  href="#"
+                  data-name="flare jeans2"
+                  data-price="89.95"
+                  class="add-to-cart btn btn-primary"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+      </div>
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
