@@ -193,40 +193,32 @@ const allJeans = [
 
 const collageOfJeans = [
   {
-      jeanType: 'all styles',
-      jeanImage: 'images/allStyles.png',
+      jeanType: 'homepage 3',
+      jeanImage: 'images/homepage3.png'
   },
   
   {
-      jeanType: 'high rise distressed',
-      jeanImage: 'images/highRiseDistressed.png'
+      jeanType: 'homepage 4',
+      jeanImage: 'images/homepage4.png'
   },
-  
-  {
-      jeanType: 'high rise flare',
-      jeanImage: 'images/highRiseFlare.png'
-  },
-  
-  {
-      jeanType: 'high rise skinny',
-      jeanImage: 'images/highRiseSkinny.png'
-  },
-  
-  {
-      jeanType: 'mid rise distressed',
-      jeanImage: 'images/midRiseDistressed.png'
-  },
-  
-  {
-      jeanType: 'mid rise flare',
-      jeanImage: 'images/midRiseFlare.png'
-  },
-  
-  {
-      jeanType: 'mid rise skinny',
-      jeanImage: 'images/midRiseSkinny.png'
-  },
-  
+{
+    jeanType: 'homepage 6',
+    jeanImage: 'images/homepage6.png'
+},
+
+{
+    jeanType: 'homepage 7',
+    jeanImage: 'images/homepage7.png'
+},
+
+{
+    jeanType: 'bell bottomhomepage 8',
+    jeanImage: 'images/homepage8.png'
+},
+{
+    jeanType: 'homepage10',
+    jeanImage: 'images/homepage10.png'
+},
   {
       jeanType: 'homepage 1',
       jeanImage: 'images/homepage1.png'
@@ -246,15 +238,62 @@ const collageOfJeans = [
       jeanType: 'homepage 4',
       jeanImage: 'images/homepage4.png'
   },
+{
+    jeanType: 'homepage 6',
+    jeanImage: 'images/homepage6.png'
+},
+
+{
+    jeanType: 'homepage 7',
+    jeanImage: 'images/homepage7.png'
+},
+
+{
+    jeanType: 'bell bottomhomepage 9',
+    jeanImage: 'images/homepage9.png'
+},
+
+{
+    jeanType: 'homepage10',
+    jeanImage: 'images/homepage10.png'
+},
+{
+    jeanType: 'homepage 2',
+    jeanImage: 'images/homepage2.png'
+},
+
+{
+    jeanType: 'homepage 3',
+    jeanImage: 'images/homepage3.png'
+},
+
+{
+    jeanType: 'homepage 4',
+    jeanImage: 'images/homepage4.png'
+},
+{
+    jeanType: 'bell bottomhomepage 8',
+    jeanImage: 'images/homepage8.png'
+},
+
+{
+      jeanType: 'homepage 1',
+      jeanImage: 'images/homepage1.png'
+},
   
   {
-      jeanType: 'homepage 5',
-      jeanImage: 'images/homepage5.png'
+      jeanType: 'homepage 2',
+      jeanImage: 'images/homepage2.png'
   },
   
   {
-      jeanType: 'homepage 6',
-      jeanImage: 'images/homepage6.png'
+      jeanType: 'homepage 3',
+      jeanImage: 'images/homepage3.png'
+  },
+  
+ {
+      jeanType: 'homepage 5',
+      jeanImage: 'images/homepage5.png'
   },
   
   {
@@ -276,7 +315,11 @@ const collageOfJeans = [
       jeanType: 'homepage10',
       jeanImage: 'images/homepage10.png'
   },
-]
+  {
+    jeanType: 'homepage 3',
+    jeanImage: 'images/homepage3.png'
+  },
+];
 
 
 const printToDom = (divId, textToPrint) => {
@@ -290,13 +333,14 @@ const buildJeanImageCollage = (jeanCollageArray) => {
   for (let j = 0; j < collageOfJeans.length; j++) {
       domString += `<div id=“${j}”>
                       <div>
-                      <div class=“image-container”><img src=${collageOfJeans[j].jeanImage}></div>   
+                      <a href="shop.html">
+                      <div class=“image-container”><img src=${collageOfJeans[j].jeanImage}></div></a>   
                       </div>
                   </div>`
   }
 
   printToDom("jeanCollage", domString)
-}
+};
 
 const buildProductCards = (arr) => {
   let domString = "";
