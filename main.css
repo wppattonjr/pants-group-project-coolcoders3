@@ -9,6 +9,9 @@ body {
    vertical-align: bottom;
 }
 
+#filterOptions {
+  display: none;
+}
 
 /* SLIDER */
 

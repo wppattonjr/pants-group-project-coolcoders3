@@ -338,10 +338,18 @@ const displayRandomFact = () => {
   printToDom("factsCardAbout", domString);
 };
 
-const productFilterButtonClick = () => {
-    document.getElementById('styleFilterDropdown').addEventListener('click', filterByStyle);
-    document.getElementById('priceFilterDropdown').addEventListener('click', filterByPrice);
-};
+// const productFilterButtonClick = () => {
+//     document.getElementById('styleFilterDropdown').addEventListener('click', filterByStyle);
+//     document.getElementById('priceFilterDropdown').addEventListener('click', filterByPrice);
+// };
+
+const filterButtonClick = () => {
+  document.getElementById('filterDropdown').addEventListener('click', showFilterOptions);
+}
+
+const showFilterOptions = () => {
+  document.getElementById('filterOptions').style.display = 'block';
+}
 
 const filterByStyle = (e) => {
     console.log('buttonID', e.target.id)
@@ -386,14 +394,6 @@ const filterByPrice = (e) => {
 };
 
 const showSliderValue = () => {
-  // let sliderValue = document.getElementById("sliderRange").value;
-
-  // let domString = `Maximum Price: $${sliderValue}`
-
-  // printToDom("maxPrice", domString);
-
-  // let output = document.querySelector("")
-
   let input = document.getElementById('sliderRange'),
       output = document.getElementById('maxPrice');
 
@@ -402,9 +402,6 @@ const showSliderValue = () => {
   input.addEventListener('input', function() {
     output.innerHTML = `Maximum Price: $${input.value}`;
   }, false);
-
-
-
 }
 
 const init = () => {
@@ -415,7 +412,7 @@ const init = () => {
     case "/shop.html":
       buildProductCards(allJeans);
       showSliderValue();
-      productFilterButtonClick();
+      filterButtonClick();
       break;
     case "/index.html":
       buildJeanImageCollage(collageOfJeans)
