@@ -321,6 +321,23 @@ const collageOfJeans = [
   },
 ];
 
+const customerEmailFromModal = [];
+
+const iWantMyDiscountButton = () => {
+  const customerEmail = document.getElementById("inputEmailAddress").value;
+  
+  
+  let emailInput = {
+    custEmail: customerEmail
+  };
+  customerEmailFromModal.push(emailInput);
+};
+
+const modalButtonEventClick = () => {
+  document.querySelector("#discount").addEventListener("click", iWantMyDiscountButton);
+};
+
+
 
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
@@ -395,6 +412,9 @@ const init = () => {
       break;
     case "/index.html":
       buildJeanImageCollage(collageOfJeans)
+      break;
+    case "/index.html":
+      modalButtonEventClick();
       break;
   }
 };

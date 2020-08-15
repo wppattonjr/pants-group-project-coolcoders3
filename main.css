@@ -11,3 +11,19 @@ body {
     column-count: 5;
     column-gap: 0px;
 }
+
+#popUpCouponCard {
+    text-align: center;
+}
+
+#modalHeader {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+#emailForm {
+    text-align: center;
+}
