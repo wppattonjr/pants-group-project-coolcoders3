@@ -269,7 +269,6 @@ const buildProductCards = (arr) => {
   printToDom("productContainerShop", domString);
 };
 
-
 //////////////////// ABOUT PAGE FUNCTIONS//////////////////////////
 const colorMap = () => {
   for (let i = 0; i < locations.length; i++) {
@@ -309,27 +308,36 @@ const unhiglightLocation = (e) => {
   }
 };
 const mapClick = (state) => {
-  document.querySelector(state).addEventListener("click", displayLocationCard);
+  document.querySelector(state).addEventListener("click", buildLocationModal);
 };
 
-const displayLocationCard = (e) => {
+const buildLocationModal = (e) => {
   let locationId = e.target.id;
-  let domString = "";
+  let modalString = "";
   for (let i = 0; i < locations.length; i++) {
     if (locationId === locations[i].id) {
-      domString += `<div class="card text-center" style="width: 18rem;">
-<img class="card-img-top" src="${locations[i].imageUrl}" alt="${locations[i].city} Storefront">
-<div class="card-body">
-  <h3 class="card-text">${locations[i].city}</h3>
-  <p class="card-text">${locations[i].address}</p>
-  <h5 class="card-text">Hours</h5>
-  <p class="card-text">Weekdays: ${locations[i].hours.weekdays}</p>
-  <p class="card-text">Weekends: ${locations[i].hours.weekends}</p>
-</div>
-</div>`;
+      modalString += `<div class="modal  text-center" id="locationModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <h2>${locations[i].city}</h2>  
+          <img class="modal-content img-responsive" src="${locations[i].imageUrl}" alt="${locations[i].city} Storefront">
+            <p>${locations[i].address}</p>
+            <h5>Hours</h5>
+            <p>Weekdays: ${locations[i].hours.weekdays}</p>
+            <p>Weekends: ${locations[i].hours.weekends}</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
     }
+    printToDom("locationCardAbout", modalString);
   }
-  printToDom("locationCardAbout", domString);
+  $("#locationModal").modal("show");
 };
 
 const funFactsButtonClick = () => {
@@ -345,7 +353,7 @@ const factRandomizer = () => {
 const displayRandomFact = () => {
   let domString = "";
   let randomFactNumber = factRandomizer();
-  domString = `<div class="card text-center m-5" style="width: 18rem;">
+  domString = `<div class="card text-center m-5 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">${funFacts[randomFactNumber].title}</h5>
       <p class="card-text">${funFacts[randomFactNumber].content}</p>
@@ -380,3 +388,14 @@ const init = () => {
 };
 
 init();
+
+// `<div class="card text-center shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+// <img class="card-img-top" src="${locations[i].imageUrl}" alt="${locations[i].city} Storefront">
+// <div class="card-body">
+//   <h3 class="card-text">${locations[i].city}</h3>
+//   <p class="card-text">${locations[i].address}</p>
+//   <h5 class="card-text">Hours</h5>
+//   <p class="card-text">Weekdays: ${locations[i].hours.weekdays}</p>
+//   <p class="card-text">Weekends: ${locations[i].hours.weekends}</p>
+// </div>
+// </div>`;
