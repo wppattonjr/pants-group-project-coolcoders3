@@ -2,11 +2,28 @@ body {
     background-color: white;
 }
 
-.image-container {
-   max-height: 100%;
-   min-width: 100%;
-   object-fit: cover;
-   vertical-align: bottom;
+#jeanCollage {
+    line-height: 0;
+    -webkit-column-count: 5px;
+    -webkit-column-gap: 0;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
 }
 
+#popUpCouponCard {
+    text-align: center;
+}
 
+#modalHeader {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+#emailForm {
+    text-align: center;
+}
