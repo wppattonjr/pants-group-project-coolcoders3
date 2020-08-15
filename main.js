@@ -323,18 +323,23 @@ const collageOfJeans = [
 
 const customerEmailFromModal = [];
 
+const showModal = () => {
+  $('#couponModal').modal("show");
+};
+
+
+const modalButtonEventClick = () => {
+  document.querySelector("#discount").addEventListener("click", iWantMyDiscountButton);
+};
+
 const iWantMyDiscountButton = () => {
   const customerEmail = document.getElementById("inputEmailAddress").value;
-  
-  
+     
   let emailInput = {
     custEmail: customerEmail
   };
   customerEmailFromModal.push(emailInput);
-};
-
-const modalButtonEventClick = () => {
-  document.querySelector("#discount").addEventListener("click", iWantMyDiscountButton);
+  console.log("EmailtoArray: Email", customerEmailFromModal)
 };
 
 
@@ -411,12 +416,12 @@ const init = () => {
       buildProductCards(allJeans);
       break;
     case "/index.html":
-      buildJeanImageCollage(collageOfJeans)
-      break;
-    case "/index.html":
+      buildJeanImageCollage(collageOfJeans);
+      window.onload = showModal();
       modalButtonEventClick();
+      iWantMyDiscountButton();
       break;
-  }
+     }
 };
 
 init();
