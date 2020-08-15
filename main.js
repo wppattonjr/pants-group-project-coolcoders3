@@ -68,6 +68,25 @@ let funFacts = [
   },
 ];
 
+const factsColors = [
+    {
+     background: "#EA526F",
+     text: "#FFFFFF"
+    },
+    {
+     background: "#FF8A5B",
+     text: "#FFFFFF"
+    },
+    {
+     background: "#25CED1",
+     text: "#000000"
+    },
+    {
+     background: "#FCEADE",
+     text: "#000000"
+    },
+];
+
 const allJeans = [
   {
     name: "Mid Rise Skinny Jeans",
@@ -517,10 +536,15 @@ const factRandomizer = () => {
   return Math.floor(Math.random() * funFacts.length);
 };
 
+const colorRandomizer = () => {
+    return Math.floor(Math.random() * factsColors.length);
+}
+
 const displayRandomFact = () => {
   let domString = "";
   let randomFactNumber = factRandomizer();
-  domString = `<div class="card text-center m-5 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  let randomColor = colorRandomizer();
+  domString = `<div class="card text-center m-5 shadow p-3 mb-5 rounded" style="width: 18rem; background-color: ${factsColors[randomColor].background}; color: ${factsColors[randomColor].text}">
     <div class="card-body">
       <h5 class="card-title">${funFacts[randomFactNumber].title}</h5>
       <p class="card-text">${funFacts[randomFactNumber].content}</p>
