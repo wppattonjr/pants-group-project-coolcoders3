@@ -242,31 +242,132 @@ const locations = [
   },
 ];
 
+const collageOfJeans = [
+  {
+      jeanType: 'all styles',
+      jeanImage: 'images/allStyles.png',
+  },
+  
+  {
+      jeanType: 'high rise distressed',
+      jeanImage: 'images/highRiseDistressed.png'
+  },
+  
+  {
+      jeanType: 'high rise flare',
+      jeanImage: 'images/highRiseFlare.png'
+  },
+  
+  {
+      jeanType: 'high rise skinny',
+      jeanImage: 'images/highRiseSkinny.png'
+  },
+  
+  {
+      jeanType: 'mid rise distressed',
+      jeanImage: 'images/midRiseDistressed.png'
+  },
+  
+  {
+      jeanType: 'mid rise flare',
+      jeanImage: 'images/midRiseFlare.png'
+  },
+  
+  {
+      jeanType: 'mid rise skinny',
+      jeanImage: 'images/midRiseSkinny.png'
+  },
+  
+  {
+      jeanType: 'homepage 1',
+      jeanImage: 'images/homepage1.png'
+  },
+  
+  {
+      jeanType: 'homepage 2',
+      jeanImage: 'images/homepage2.png'
+  },
+  
+  {
+      jeanType: 'homepage 3',
+      jeanImage: 'images/homepage3.png'
+  },
+  
+  {
+      jeanType: 'homepage 4',
+      jeanImage: 'images/homepage4.png'
+  },
+  
+  {
+      jeanType: 'homepage 5',
+      jeanImage: 'images/homepage5.png'
+  },
+  
+  {
+      jeanType: 'homepage 6',
+      jeanImage: 'images/homepage6.png'
+  },
+  
+  {
+      jeanType: 'homepage 7',
+      jeanImage: 'images/homepage7.png'
+  },
+  
+  {
+      jeanType: 'bell bottomhomepage 8',
+      jeanImage: 'images/homepage8.png'
+  },
+  
+  {
+      jeanType: 'bell bottomhomepage 9',
+      jeanImage: 'images/homepage9.png'
+  },
+  
+  {
+      jeanType: 'homepage10',
+      jeanImage: 'images/homepage10.png'
+  },
+]
+
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
 };
 
-//////////////////// SHOP PAGE FUNCTIONS//////////////////////////
-const buildProductCards = (arr) => {
-  let domString = "";
 
-  for (let i = 0; i < arr.length; i++) {
-    domString += `<div class="card m-4" style="width: 18rem;">
-                        <img src="${
-                          allJeans[i].imageUrl
-                        }" class="card-img-top" alt="${allJeans[i].name}">
-                        <div class="card-body">
-                            <h5 class="product-name">${allJeans[i].name}</h5>
-                            <p class="available-sizes">Available Sizes</p>
-                            <p class="card-sizes">${allJeans[
-                              i
-                            ].sizesAvailable.join("  ")}</p>
-                        </div>
-                    </div>`;
+//////////////////// SHOP PAGE FUNCTIONS//////////////////////////
+
+const buildJeanImageCollage = (jeanCollageArray) => {
+  let domString ='';
+
+  for (let j = 0; j < collageOfJeans.length; j++) {
+      domString += `<div id=“${j}”>
+                      <div>
+                      <div class=“image-container”><img src=${collageOfJeans[j].jeanImage}></div>   
+                      </div>
+                  </div>`
   }
 
-  printToDom("productContainerShop", domString);
+  printToDom("jeanCollage", domString)
+}
+
+
+const buildProductCards = (arr) => {
+    let domString = '';
+
+    for (let i = 0; i < arr.length; i++) {
+        domString += `<div class="card m-4" style="width: 18rem;">
+                        <img src="${arr[i].imageUrl}" class="card-img-top" alt="${arr[i].name}">
+                        <div class="card-body">
+                            <h5 class="product-name">${arr[i].name}</h5>
+                            <p class="product-price">$${arr[i].price}</p>
+                            <p class="available-sizes">Available Sizes</p>
+                            <p class="card-sizes">${arr[i].sizesAvailable.join(' ')}</p>
+                        </div>
+                    </div>`
+    }
+
+    printToDom('productContainerShop', domString);
 };
 
 //////////////////// ABOUT PAGE FUNCTIONS//////////////////////////
@@ -362,7 +463,56 @@ const displayRandomFact = () => {
   printToDom("factsCardAbout", domString);
 };
 
+
 ///////////////// GLOBAL FUNCTIONs ////////////////////////
+
+const productFilterButtonClick = () => {
+    document.getElementById('styleFilterDropdown').addEventListener('click', filterByStyle);
+    document.getElementById('priceFilterDropdown').addEventListener('click', filterByPrice);
+};
+
+const filterByStyle = (e) => {
+    console.log('buttonID', e.target.id)
+    const buttonId = e.target.id;
+
+    let selectedStyles = [];
+
+    for (let i = 0; i < allJeans.length; i++) {
+        if (buttonId === allJeans[i].style) {
+            selectedStyles.push(allJeans[i]);
+        } 
+    }
+
+    if (buttonId === 'allStylesSort') {
+        buildProductCards(allJeans);
+    } else if (buttonId !== 'dropdownMenu2') {
+        buildProductCards(selectedStyles);
+    }
+};
+
+const filterByPrice = (e) => {
+    console.log('buttonID', e.target.id)
+    const buttonId = e.target.id;
+
+    let selectedPrices = [];
+
+    for (let i = 0; i < allJeans.length; i++) {
+        if (buttonId === 'lowPriceSort' && allJeans[i].price < 50) {
+            selectedPrices.push(allJeans[i]);
+        } else if (buttonId === 'midPriceSort' && allJeans[i].price >= 50 && allJeans[i].price < 100) {
+            selectedPrices.push(allJeans[i]);
+        } else if (buttonId === 'highPriceSort' && allJeans[i].price >= 100) {
+            selectedPrices.push(allJeans[i]);
+        }
+    }
+
+    if (buttonId === 'allPricesSort') {
+        buildProductCards(allJeans);
+    } else if (buttonId !== 'dropdownMenu2') {
+        buildProductCards(selectedPrices);
+    }
+};
+
 const init = () => {
   switch (document.location.pathname) {
     case "/about.html":
@@ -383,19 +533,14 @@ const init = () => {
       break;
     case "/shop.html":
       buildProductCards(allJeans);
+      productFilterButtonClick();
+      break;
+    case "/index.html":
+      buildJeanImageCollage(collageOfJeans)
       break;
   }
 };
 
+
 init();
 
-// `<div class="card text-center shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-// <img class="card-img-top" src="${locations[i].imageUrl}" alt="${locations[i].city} Storefront">
-// <div class="card-body">
-//   <h3 class="card-text">${locations[i].city}</h3>
-//   <p class="card-text">${locations[i].address}</p>
-//   <h5 class="card-text">Hours</h5>
-//   <p class="card-text">Weekdays: ${locations[i].hours.weekdays}</p>
-//   <p class="card-text">Weekends: ${locations[i].hours.weekends}</p>
-// </div>
-// </div>`;
