@@ -385,6 +385,28 @@ const filterByPrice = (e) => {
     }
 };
 
+const showSliderValue = () => {
+  // let sliderValue = document.getElementById("sliderRange").value;
+
+  // let domString = `Maximum Price: $${sliderValue}`
+
+  // printToDom("maxPrice", domString);
+
+  // let output = document.querySelector("")
+
+  let input = document.getElementById('sliderRange'),
+      output = document.getElementById('maxPrice');
+
+  output.innerHTML = `Maximum Price: $${input.value}`;
+
+  input.addEventListener('input', function() {
+    output.innerHTML = `Maximum Price: $${input.value}`;
+  }, false);
+
+
+
+}
+
 const init = () => {
   switch (document.location.pathname) {
     case "/about.html":
@@ -392,6 +414,7 @@ const init = () => {
       break;
     case "/shop.html":
       buildProductCards(allJeans);
+      showSliderValue();
       productFilterButtonClick();
       break;
     case "/index.html":
