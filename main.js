@@ -4,13 +4,15 @@ var shoppingCart = (function () {
      // =============================
   // Private methods and propeties
   // =============================
-  cart = [];
+  var cart = [];
 
   // Constructor
   // A constructor is a function that creates an instance of a class which is typically called an “object”.
   // In JavaScript, a constructor gets called when you declare an object using the new keyword.
   // The purpose of a constructor is to create an object and set values if there are any object properties present.
 
+  // Class: Classes are in fact "special functions", and just as you can define function expressions and function declarations, 
+  // the class syntax has two components: class expressions and class declarations.
   function Item(name, price, count) {
     this.name = name;
     this.price = price;
@@ -122,10 +124,10 @@ var shoppingCart = (function () {
   // List cart
   obj.listCart = function () {
     var cartCopy = [];
-    for (i in cart) {
-      item = cart[i];
-      itemCopy = {};
-      for (p in item) {
+    for (var i in cart) {
+      var item = cart[i];
+      var itemCopy = {};
+      for (var p in item) {
         itemCopy[p] = item[p];
       }
       itemCopy.total = Number(item.price * item.count).toFixed(2);
@@ -234,6 +236,7 @@ $(".show-cart").on("click", ".plus-item", function (event) {
 });
 
 // Item count input
+// The . val() method is primarily used to get the values of form elements such as input , select and textarea . 
 $(".show-cart").on("change", ".item-count", function (event) {
   var name = $(this).data("name");
   var count = Number($(this).val());

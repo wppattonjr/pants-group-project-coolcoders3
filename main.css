@@ -6,7 +6,7 @@ body {
   .show-cart li {
     display: flex;
   }
-  .card {
+  /* .card {
     margin-bottom: 20px;
     
   }
@@ -15,10 +15,16 @@ body {
     height: 200px;
     align-self: center;
     
-  }
+  } */
   
   .card-block {
       border-style: solid;
-      border-color: FF8A5B;  
+      border-color: #FF8A5B;  
       
+  }
+
+  .display-4{
+    text-align: center;
+  
+  
   }
