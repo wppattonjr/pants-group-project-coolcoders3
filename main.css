@@ -130,3 +130,22 @@ h6 {
 #emailForm {
     text-align: center;
 }
+/*-----checkout page------ */
+
+
+
+.show-cart li {
+  display: flex;
+}
+
+
+.card-block {
+    border-style: solid;
+    border-color: #FF8A5B;  
+    
+}
+
+.display-4{
+  text-align: center;
+}
+
