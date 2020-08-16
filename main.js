@@ -343,11 +343,6 @@ const displayRandomFact = () => {
   printToDom("factsCardAbout", domString);
 };
 
-// const productFilterButtonClick = () => {
-//     document.getElementById('styleFilterDropdown').addEventListener('click', filterByStyle);
-//     document.getElementById('priceFilterDropdown').addEventListener('click', filterByPrice);
-// };
-
 const filterButtonClick = () => {
   document.getElementById('filterDropdown').addEventListener('click', showFilterOptions);
 };
@@ -384,7 +379,6 @@ const applyFilters = () => {
           selectedStyles.push(allJeans[i]);
         }
     }
-    console.log('array after filtering by style', selectedStyles)
   }
 
   const filterByRise = () => {
@@ -399,7 +393,6 @@ const applyFilters = () => {
           selectedRises.push(selectedStyles[i]);
         }
     }
-    console.log('array after filtering by rise', selectedRises)
   }
 
   let input = document.getElementById('sliderRange');
@@ -410,8 +403,8 @@ const applyFilters = () => {
           selectedPrices.push(selectedRises[i]);
       }
     }
-    console.log('array after filtering by price', selectedPrices);
   }
+  
   filterByStyle();
   filterByRise();
   filterByPrice();
