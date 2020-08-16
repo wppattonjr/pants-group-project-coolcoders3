@@ -90,6 +90,7 @@ const factsColors = [
 const allJeans = [
   {
     name: "Mid Rise Skinny Jeans",
+    rise: "Mid Rise",
     style: "Skinny",
     price: 49.95,
     imageUrl: "images/midRiseSkinny.png",
@@ -110,6 +111,7 @@ const allJeans = [
   },
   {
     name: "High Rise Skinny Jeans",
+    rise: "High Rise",
     style: "Skinny",
     price: 79.95,
     imageUrl: "images/highRiseSkinny.png",
@@ -130,6 +132,7 @@ const allJeans = [
   },
   {
     name: "Mid Rise Distressed Jeans",
+    rise: "Mid Rise",
     style: "Distressed",
     price: 89.95,
     imageUrl: "images/midRiseDistressed.png",
@@ -150,6 +153,7 @@ const allJeans = [
   },
   {
     name: "High Rise Distressed Jeans",
+    rise: "High Rise",
     style: "Distressed",
     price: 79.95,
     imageUrl: "images/highRiseDistressed.png",
@@ -170,6 +174,7 @@ const allJeans = [
   },
   {
     name: "Mid Rise Flare Jeans",
+    rise: "Mid Rise",
     style: "Flare",
     price: 89.95,
     imageUrl: "images/midRiseFlare.png",
@@ -190,6 +195,7 @@ const allJeans = [
   },
   {
     name: "High Rise Flare Jeans",
+    rise: "High Rise",
     style: "Flare",
     price: 109.95,
     imageUrl: "images/highRiseFlare.png",
@@ -412,7 +418,6 @@ const iWantMyDiscountButton = () => {
   console.log("EmailtoArray: Email", customerEmailFromModal)
 };
 
-
 const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
@@ -435,7 +440,6 @@ const buildJeanImageCollage = (jeanCollageArray) => {
 
   printToDom("jeanCollage", domString)
 };
-
 
 const buildProductCards = (arr) => {
     let domString = '';
@@ -553,54 +557,85 @@ const displayRandomFact = () => {
   printToDom("factsCardAbout", domString);
 };
 
-
-///////////////// GLOBAL FUNCTIONs ////////////////////////
-
-const productFilterButtonClick = () => {
-    document.getElementById('styleFilterDropdown').addEventListener('click', filterByStyle);
-    document.getElementById('priceFilterDropdown').addEventListener('click', filterByPrice);
+const filterButtonClick = () => {
+  document.getElementById('filterDropdown').addEventListener('click', showFilterOptions);
 };
 
-const filterByStyle = (e) => {
-    console.log('buttonID', e.target.id)
-    const buttonId = e.target.id;
-
-    let selectedStyles = [];
-
-    for (let i = 0; i < allJeans.length; i++) {
-        if (buttonId === allJeans[i].style) {
-            selectedStyles.push(allJeans[i]);
-        } 
-    }
-
-    if (buttonId === 'allStylesSort') {
-        buildProductCards(allJeans);
-    } else if (buttonId !== 'dropdownMenu2') {
-        buildProductCards(selectedStyles);
-    }
+const showFilterOptions = () => {
+  document.getElementById('filterOptions').style.display = 'block';
 };
 
-const filterByPrice = (e) => {
-    console.log('buttonID', e.target.id)
-    const buttonId = e.target.id;
+const applyButtonClick = () => {
+  document.getElementById('applyButton').addEventListener('click', applyFilters);
+}
 
-    let selectedPrices = [];
+const applyFilters = () => {
+  let selectedStyles = [];
+  let selectedRises = [];
+  let selectedPrices = [];
+  
+  let skinny = document.getElementById('Skinny').checked;
+  let distressed = document.getElementById('Distressed').checked;
+  let flare = document.getElementById('Flare').checked;
+  let lowRise = document.getElementById('LowRise').checked;
+  let midRise = document.getElementById('MidRise').checked;
+  let highRise = document.getElementById('HighRise').checked;
 
+  const filterByStyle = () => {
     for (let i = 0; i < allJeans.length; i++) {
-        if (buttonId === 'lowPriceSort' && allJeans[i].price < 50) {
-            selectedPrices.push(allJeans[i]);
-        } else if (buttonId === 'midPriceSort' && allJeans[i].price >= 50 && allJeans[i].price < 100) {
-            selectedPrices.push(allJeans[i]);
-        } else if (buttonId === 'highPriceSort' && allJeans[i].price >= 100) {
-            selectedPrices.push(allJeans[i]);
+        if (skinny && allJeans[i].style === 'Skinny') {
+          selectedStyles.push(allJeans[i]);
+        } else if (distressed && allJeans[i].style === 'Distressed') {
+          selectedStyles.push(allJeans[i]);
+        } else if (flare && allJeans[i].style === 'Flare') {
+          selectedStyles.push(allJeans[i]);
+        } else if (!skinny && !distressed && !flare) {
+          selectedStyles.push(allJeans[i]);
         }
     }
+  }
 
-    if (buttonId === 'allPricesSort') {
-        buildProductCards(allJeans);
-    } else if (buttonId !== 'dropdownMenu2') {
-        buildProductCards(selectedPrices);
+  const filterByRise = () => {
+    for (let i = 0; i < selectedStyles.length; i++) {
+        if (lowRise && selectedStyles[i].rise === 'Low Rise') {
+          selectedRises.push(selectedStyles[i]);
+        } else if (midRise && selectedStyles[i].rise === 'Mid Rise') {
+          selectedRises.push(selectedStyles[i]);
+        } else if (highRise && selectedStyles[i].rise === 'High Rise') {
+          selectedRises.push(selectedStyles[i]);
+        } else if (!lowRise && !midRise && !highRise) {
+          selectedRises.push(selectedStyles[i]);
+        }
     }
+  }
+
+  let input = document.getElementById('sliderRange');
+
+  const filterByPrice = () => {
+    for (let i = 0; i < selectedRises.length; i++) {
+      if (selectedRises[i].price <= input.value) {
+          selectedPrices.push(selectedRises[i]);
+      }
+    }
+  }
+  
+  filterByStyle();
+  filterByRise();
+  filterByPrice();
+
+  buildProductCards(selectedPrices);
+
+};
+
+const showSliderValue = () => {
+  let input = document.getElementById('sliderRange'),
+      output = document.getElementById('maxPrice');
+
+  output.innerHTML = `Maximum Price: $${input.value}`;
+
+  input.addEventListener('input', function() {
+    output.innerHTML = `Maximum Price: $${input.value}`;
+  }, false);
 };
 
 const init = () => {
@@ -623,7 +658,9 @@ const init = () => {
       break;
     case "/shop.html":
       buildProductCards(allJeans);
-      productFilterButtonClick();
+      showSliderValue();
+      filterButtonClick();
+      applyButtonClick();
       break;
     case "/index.html":
       buildJeanImageCollage(collageOfJeans);
