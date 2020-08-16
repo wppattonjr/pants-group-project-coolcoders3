@@ -400,22 +400,24 @@ const collageOfJeans = [
 const customerEmailFromModal = [];
 
 const showModal = () => {
-  $('#couponModal').modal("show");
+  $('#couponModal').modal('show');
 };
 
 
 const modalButtonEventClick = () => {
-  document.querySelector("#discount").addEventListener("click", iWantMyDiscountButton);
+  document.querySelector('#discount').addEventListener('click', iWantMyDiscountButton);
 };
 
 const iWantMyDiscountButton = () => {
-  const customerEmail = document.getElementById("inputEmailAddress").value;
+  const customerEmail = document.getElementById('inputEmailAddress').value;
      
   let emailInput = {
     custEmail: customerEmail
   };
   customerEmailFromModal.push(emailInput);
-  console.log("EmailtoArray: Email", customerEmailFromModal)
+  console.log()
+  console.log('EmailtoArray: Email', customerEmailFromModal)
+  $('#couponModal').modal('hide')
 };
 
 const printToDom = (divId, textToPrint) => {
