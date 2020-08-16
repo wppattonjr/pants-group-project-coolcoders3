@@ -563,6 +563,7 @@ const filterButtonClick = () => {
 
 const showFilterOptions = () => {
   document.getElementById('filterOptions').style.display = 'block';
+};
 
 const applyButtonClick = () => {
   document.getElementById('applyButton').addEventListener('click', applyFilters);
