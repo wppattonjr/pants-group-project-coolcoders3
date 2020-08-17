@@ -8,7 +8,8 @@ This website showcases the products available from a new jean company for women,
 - Shop: Allows the user to see all available products and filter according to needs.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iHvMIMcLXmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - About: Describes the history of the company, shows locations on a map, and allows the user to cycle through fun facts about jeans.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/36FdAaQvA1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![About Page](http://img.youtube.com/vi/36FdAaQvA1o/0.jpg)](http://www.youtube.com/watch?v=36FdAaQvA1o "About Page")
+
 - Checkout: User can add items to their cart, view their cart, and clear their cart.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Ksl1oS2xBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
