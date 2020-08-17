@@ -10,12 +10,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Spill The Jeans</a>
+     <nav class="navbar navbar-expand-lg navCustom">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -30,19 +31,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="shop.html"
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="shop.html"
               >Shop<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link textCustom" href="about.html">About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="false"
-              >Checkout</a
-            >
+            <a class="nav-link textCustom" href="Checkout.html">Checkout</a>
           </li>
         </ul>
       </div>
@@ -52,9 +51,9 @@
 <div id="popupCouponCard">
   <div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content customModal">
           <div id="modalHeader">
-            <h5 class="modal-title" id="exampleModalLabel">Spill The Jeans</h5>
+            <h5 class="modal-title logo" id="exampleModalLabel">Spill The Jeans</h5>
           </div>
           <div class="modal-body">
             <h6>Get $10 Off Your First Purchase!!!</h6>
@@ -64,10 +63,10 @@
               <label for="inputEmail" class="sr-only">Email Address</label>
               <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email Address">
               <br>
-              <button type="button" class="btn btn-primary mb-2" id="discount">I want my $10</button>
+              <button type="button" class="btn customBtn mb-2" id="discount">I want my $10</button>
             </div>
             <div> 
-              <p id="closeModalLink"  data-dismiss="modal">I don't want $10</p>
+              <p id="closeModalLink"  data-dismiss="modal" class="textSmaller">I don't want $10</p>
             <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">I don't want $10</button> -->
             </div>
           </form>
@@ -83,8 +82,8 @@
 
     
 
-    <nav class="navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Spill The Jeans</a>
+    <nav class="footer">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
         <div class="footerCopyright">
         <p>&copy; 2020 Cool Coders Group III, LLC (Autumn, Kaitlyn, Sam, & Wendell) | Privacy Policy | Do Not Sell My Info | A Evening Cohort Lucky Number 13 Group Project | Your Tennessee Privacy Rights | Terms of Use</p>
         </div>
