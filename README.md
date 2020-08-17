@@ -8,11 +8,6 @@ This website showcases the products available from a new jean company for women,
 - About: Describes the history of the company, shows locations on a map, and allows the user to cycle through fun facts about jeans.
 - Checkout: User can add items to their cart, view their cart, and clear their cart.
 
-[![Home Page](http://img.youtube.com/vi/qNK7WM5fFi8/0.jpg)](http://www.youtube.com/watch?v=qNK7WM5fFi8)
-[![Shop Page](http://img.youtube.com/vi/iHvMIMcLXmg/0.jpg)](http://www.youtube.com/watch?v=iHvMIMcLXmg)
-[![About Page](http://img.youtube.com/vi/36FdAaQvA1o/0.jpg)](http://www.youtube.com/watch?v=36FdAaQvA1o)
-[![Checkout Page](http://img.youtube.com/vi/8Ksl1oS2xBk/0.jpg)](http://www.youtube.com/watch?v=8Ksl1oS2xBk)
-
 # Wireframes/prototype
 Our wireframes can be found [here](https://www.figma.com/proto/MtnQzldVyXL165xhFAsRzf/Pants-Project?node-id=1%3A2&scaling=min-zoom).
 
