@@ -5,10 +5,14 @@
 body {
   margin: 0;
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.customModal {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fceade;
 }
 .navCustom {
-  background-color: #FCEADE;
+  background-color: #fceade;
 }
 
 .textCustom {
@@ -29,16 +33,17 @@ h1 {
 }
 
 .jumbotron {
-  background-color: #25CED1;
+  background-color: #25ced1;
   color: white;
 }
 
 .customBtn {
-  background-color: #25CED1;
+  background-color: #25ced1;
+  color: white;
 }
 
 .footer {
-  background-color: #FF8A5B;
+  background-color: #ff8a5b;
   bottom: 0;
 }
 
