@@ -69,22 +69,22 @@ let funFacts = [
 ];
 
 const factsColors = [
-    {
-     background: "#EA526F",
-     text: "#FFFFFF"
-    },
-    {
-     background: "#FF8A5B",
-     text: "#FFFFFF"
-    },
-    {
-     background: "#25CED1",
-     text: "#000000"
-    },
-    {
-     background: "#FCEADE",
-     text: "#000000"
-    },
+  {
+    background: "#EA526F",
+    text: "#FFFFFF",
+  },
+  {
+    background: "#FF8A5B",
+    text: "#FFFFFF",
+  },
+  {
+    background: "#25CED1",
+    text: "#000000",
+  },
+  {
+    background: "#FCEADE",
+    text: "#000000",
+  },
 ];
 
 const allJeans = [
@@ -269,155 +269,156 @@ const locations = [
 
 const collageOfJeans = [
   {
-      jeanType: 'homepage 3',
-      jeanImage: 'images/homepage3.png'
+    jeanType: "homepage 3",
+    jeanImage: "images/homepage3.png",
   },
-  
-  {
-      jeanType: 'homepage 4',
-      jeanImage: 'images/homepage4.png'
-  },
-{
-    jeanType: 'homepage 6',
-    jeanImage: 'images/homepage6.png'
-},
 
-{
-    jeanType: 'homepage 7',
-    jeanImage: 'images/homepage7.png'
-},
+  {
+    jeanType: "homepage 4",
+    jeanImage: "images/homepage4.png",
+  },
+  {
+    jeanType: "homepage 6",
+    jeanImage: "images/homepage6.png",
+  },
 
-{
-    jeanType: 'bell bottomhomepage 8',
-    jeanImage: 'images/homepage8.png'
-},
-{
-    jeanType: 'homepage10',
-    jeanImage: 'images/homepage10.png'
-},
   {
-      jeanType: 'homepage 1',
-      jeanImage: 'images/homepage1.png'
+    jeanType: "homepage 7",
+    jeanImage: "images/homepage7.png",
   },
-  
-  {
-      jeanType: 'homepage 2',
-      jeanImage: 'images/homepage2.png'
-  },
-  
-  {
-      jeanType: 'homepage 3',
-      jeanImage: 'images/homepage3.png'
-  },
-  
-  {
-      jeanType: 'homepage 4',
-      jeanImage: 'images/homepage4.png'
-  },
-{
-    jeanType: 'homepage 6',
-    jeanImage: 'images/homepage6.png'
-},
 
-{
-    jeanType: 'homepage 7',
-    jeanImage: 'images/homepage7.png'
-},
+  {
+    jeanType: "bell bottomhomepage 8",
+    jeanImage: "images/homepage8.png",
+  },
+  {
+    jeanType: "homepage10",
+    jeanImage: "images/homepage10.png",
+  },
+  {
+    jeanType: "homepage 1",
+    jeanImage: "images/homepage1.png",
+  },
 
-{
-    jeanType: 'bell bottomhomepage 9',
-    jeanImage: 'images/homepage9.png'
-},
+  {
+    jeanType: "homepage 2",
+    jeanImage: "images/homepage2.png",
+  },
 
-{
-    jeanType: 'homepage10',
-    jeanImage: 'images/homepage10.png'
-},
-{
-    jeanType: 'homepage 2',
-    jeanImage: 'images/homepage2.png'
-},
+  {
+    jeanType: "homepage 3",
+    jeanImage: "images/homepage3.png",
+  },
 
-{
-    jeanType: 'homepage 3',
-    jeanImage: 'images/homepage3.png'
-},
+  {
+    jeanType: "homepage 4",
+    jeanImage: "images/homepage4.png",
+  },
+  {
+    jeanType: "homepage 6",
+    jeanImage: "images/homepage6.png",
+  },
 
-{
-    jeanType: 'homepage 4',
-    jeanImage: 'images/homepage4.png'
-},
-{
-    jeanType: 'bell bottomhomepage 8',
-    jeanImage: 'images/homepage8.png'
-},
+  {
+    jeanType: "homepage 7",
+    jeanImage: "images/homepage7.png",
+  },
 
-{
-      jeanType: 'homepage 1',
-      jeanImage: 'images/homepage1.png'
-},
-  
   {
-      jeanType: 'homepage 2',
-      jeanImage: 'images/homepage2.png'
+    jeanType: "bell bottomhomepage 9",
+    jeanImage: "images/homepage9.png",
   },
-  
+
   {
-      jeanType: 'homepage 3',
-      jeanImage: 'images/homepage3.png'
-  },
-  
- {
-      jeanType: 'homepage 5',
-      jeanImage: 'images/homepage5.png'
-  },
-  
-  {
-      jeanType: 'homepage 7',
-      jeanImage: 'images/homepage7.png'
-  },
-  
-  {
-      jeanType: 'bell bottomhomepage 8',
-      jeanImage: 'images/homepage8.png'
-  },
-  
-  {
-      jeanType: 'bell bottomhomepage 9',
-      jeanImage: 'images/homepage9.png'
-  },
-  
-  {
-      jeanType: 'homepage10',
-      jeanImage: 'images/homepage10.png'
+    jeanType: "homepage10",
+    jeanImage: "images/homepage10.png",
   },
   {
-    jeanType: 'homepage 3',
-    jeanImage: 'images/homepage3.png'
+    jeanType: "homepage 2",
+    jeanImage: "images/homepage2.png",
+  },
+
+  {
+    jeanType: "homepage 3",
+    jeanImage: "images/homepage3.png",
+  },
+
+  {
+    jeanType: "homepage 4",
+    jeanImage: "images/homepage4.png",
+  },
+  {
+    jeanType: "bell bottomhomepage 8",
+    jeanImage: "images/homepage8.png",
+  },
+
+  {
+    jeanType: "homepage 1",
+    jeanImage: "images/homepage1.png",
+  },
+
+  {
+    jeanType: "homepage 2",
+    jeanImage: "images/homepage2.png",
+  },
+
+  {
+    jeanType: "homepage 3",
+    jeanImage: "images/homepage3.png",
+  },
+
+  {
+    jeanType: "homepage 5",
+    jeanImage: "images/homepage5.png",
+  },
+
+  {
+    jeanType: "homepage 7",
+    jeanImage: "images/homepage7.png",
+  },
+
+  {
+    jeanType: "bell bottomhomepage 8",
+    jeanImage: "images/homepage8.png",
+  },
+
+  {
+    jeanType: "bell bottomhomepage 9",
+    jeanImage: "images/homepage9.png",
+  },
+
+  {
+    jeanType: "homepage10",
+    jeanImage: "images/homepage10.png",
+  },
+  {
+    jeanType: "homepage 3",
+    jeanImage: "images/homepage3.png",
   },
 ];
 
 const customerEmailFromModal = [];
 
 const showModal = () => {
-  $('#couponModal').modal('show');
+  $("#couponModal").modal("show");
 };
 
-
 const modalButtonEventClick = () => {
-  document.querySelector('#discount').addEventListener('click', iWantMyDiscountButton);
+  document
+    .querySelector("#discount")
+    .addEventListener("click", iWantMyDiscountButton);
 };
 
 const iWantMyDiscountButton = () => {
-  const customerEmail = document.getElementById('inputEmailAddress').value;
-     
+  const customerEmail = document.getElementById("inputEmailAddress").value;
+
   let emailInput = {
-    custEmail: customerEmail
+    custEmail: customerEmail,
   };
   customerEmailFromModal.push(emailInput);
-  console.log()
-  console.log('EmailtoArray: Email', customerEmailFromModal)
-  $('#couponModal').modal('hide')
+  console.log();
+  console.log("EmailtoArray: Email", customerEmailFromModal);
+  $("#couponModal").modal("hide");
 };
 
 const printToDom = (divId, textToPrint) => {
@@ -425,40 +426,43 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-
 //////////////////// SHOP PAGE FUNCTIONS//////////////////////////
 
 const buildJeanImageCollage = (jeanCollageArray) => {
-  let domString ='';
+  let domString = "";
 
   for (let j = 0; j < collageOfJeans.length; j++) {
-      domString += `<div id=“${j}”>
+    domString += `<div id=“${j}”>
                       <div>
                       <a href="shop.html">
                       <div class=“image-container”><img src=${collageOfJeans[j].jeanImage}></div></a>   
                       </div>
-                  </div>`
+                  </div>`;
   }
 
-  printToDom("jeanCollage", domString)
+  printToDom("jeanCollage", domString);
 };
 
 const buildProductCards = (arr) => {
-    let domString = '';
+  let domString = "";
 
-    for (let i = 0; i < arr.length; i++) {
-        domString += `<div class="card m-4" style="width: 18rem;">
-                        <img src="${arr[i].imageUrl}" class="card-img-top" alt="${arr[i].name}">
+  for (let i = 0; i < arr.length; i++) {
+    domString += `<div class="card m-4" style="width: 18rem;">
+                        <img src="${
+                          arr[i].imageUrl
+                        }" class="card-img-top" alt="${arr[i].name}">
                         <div class="card-body">
                             <h5 class="product-name">${arr[i].name}</h5>
                             <p class="product-price">$${arr[i].price}</p>
                             <p class="available-sizes">Available Sizes</p>
-                            <p class="card-sizes">${arr[i].sizesAvailable.join(' ')}</p>
+                            <p class="card-sizes">${arr[i].sizesAvailable.join(
+                              " "
+                            )}</p>
                         </div>
-                    </div>`
-    }
+                    </div>`;
+  }
 
-    printToDom('productContainerShop', domString);
+  printToDom("productContainerShop", domString);
 };
 
 //////////////////// ABOUT PAGE FUNCTIONS//////////////////////////
@@ -543,8 +547,8 @@ const factRandomizer = () => {
 };
 
 const colorRandomizer = () => {
-    return Math.floor(Math.random() * factsColors.length);
-}
+  return Math.floor(Math.random() * factsColors.length);
+};
 
 const displayRandomFact = () => {
   let domString = "";
@@ -560,90 +564,96 @@ const displayRandomFact = () => {
 };
 
 const filterButtonClick = () => {
-  document.getElementById('filterDropdown').addEventListener('click', showFilterOptions);
+  document
+    .getElementById("filterDropdown")
+    .addEventListener("click", showFilterOptions);
 };
 
 const showFilterOptions = () => {
-  document.getElementById('filterOptions').style.display = 'block';
+  document.getElementById("filterOptions").style.display = "block";
 };
 
 const applyButtonClick = () => {
-  document.getElementById('applyButton').addEventListener('click', applyFilters);
-}
+  document
+    .getElementById("applyButton")
+    .addEventListener("click", applyFilters);
+};
 
 const applyFilters = () => {
   let selectedStyles = [];
   let selectedRises = [];
   let selectedPrices = [];
-  
-  let skinny = document.getElementById('Skinny').checked;
-  let distressed = document.getElementById('Distressed').checked;
-  let flare = document.getElementById('Flare').checked;
-  let lowRise = document.getElementById('LowRise').checked;
-  let midRise = document.getElementById('MidRise').checked;
-  let highRise = document.getElementById('HighRise').checked;
+
+  let skinny = document.getElementById("Skinny").checked;
+  let distressed = document.getElementById("Distressed").checked;
+  let flare = document.getElementById("Flare").checked;
+  let lowRise = document.getElementById("LowRise").checked;
+  let midRise = document.getElementById("MidRise").checked;
+  let highRise = document.getElementById("HighRise").checked;
 
   const filterByStyle = () => {
     for (let i = 0; i < allJeans.length; i++) {
-        if (skinny && allJeans[i].style === 'Skinny') {
-          selectedStyles.push(allJeans[i]);
-        } else if (distressed && allJeans[i].style === 'Distressed') {
-          selectedStyles.push(allJeans[i]);
-        } else if (flare && allJeans[i].style === 'Flare') {
-          selectedStyles.push(allJeans[i]);
-        } else if (!skinny && !distressed && !flare) {
-          selectedStyles.push(allJeans[i]);
-        }
+      if (skinny && allJeans[i].style === "Skinny") {
+        selectedStyles.push(allJeans[i]);
+      } else if (distressed && allJeans[i].style === "Distressed") {
+        selectedStyles.push(allJeans[i]);
+      } else if (flare && allJeans[i].style === "Flare") {
+        selectedStyles.push(allJeans[i]);
+      } else if (!skinny && !distressed && !flare) {
+        selectedStyles.push(allJeans[i]);
+      }
     }
-  }
+  };
 
   const filterByRise = () => {
     for (let i = 0; i < selectedStyles.length; i++) {
-        if (lowRise && selectedStyles[i].rise === 'Low Rise') {
-          selectedRises.push(selectedStyles[i]);
-        } else if (midRise && selectedStyles[i].rise === 'Mid Rise') {
-          selectedRises.push(selectedStyles[i]);
-        } else if (highRise && selectedStyles[i].rise === 'High Rise') {
-          selectedRises.push(selectedStyles[i]);
-        } else if (!lowRise && !midRise && !highRise) {
-          selectedRises.push(selectedStyles[i]);
-        }
+      if (lowRise && selectedStyles[i].rise === "Low Rise") {
+        selectedRises.push(selectedStyles[i]);
+      } else if (midRise && selectedStyles[i].rise === "Mid Rise") {
+        selectedRises.push(selectedStyles[i]);
+      } else if (highRise && selectedStyles[i].rise === "High Rise") {
+        selectedRises.push(selectedStyles[i]);
+      } else if (!lowRise && !midRise && !highRise) {
+        selectedRises.push(selectedStyles[i]);
+      }
     }
-  }
+  };
 
-  let input = document.getElementById('sliderRange');
+  let input = document.getElementById("sliderRange");
 
   const filterByPrice = () => {
     for (let i = 0; i < selectedRises.length; i++) {
       if (selectedRises[i].price <= input.value) {
-          selectedPrices.push(selectedRises[i]);
+        selectedPrices.push(selectedRises[i]);
       }
     }
-  }
-  
+  };
+
   filterByStyle();
   filterByRise();
   filterByPrice();
 
   buildProductCards(selectedPrices);
-
 };
 
 const showSliderValue = () => {
-  let input = document.getElementById('sliderRange'),
-      output = document.getElementById('maxPrice');
+  let input = document.getElementById("sliderRange"),
+    output = document.getElementById("maxPrice");
 
   output.innerHTML = `Maximum Price: $${input.value}`;
 
-  input.addEventListener('input', function() {
-    output.innerHTML = `Maximum Price: $${input.value}`;
-  }, false);
+  input.addEventListener(
+    "input",
+    function () {
+      output.innerHTML = `Maximum Price: $${input.value}`;
+    },
+    false
+  );
 };
-
 
 //--------------------- CHECKOUT PAGE JS---------------------------------------//
 var shoppingCart = (function () {
-     // =============================
+  // =============================
   // Private methods and propeties
   // =============================
   var cart = [];
@@ -653,7 +663,7 @@ var shoppingCart = (function () {
   // In JavaScript, a constructor gets called when you declare an object using the new keyword.
   // The purpose of a constructor is to create an object and set values if there are any object properties present.
 
-  // Class: Classes are in fact "special functions", and just as you can define function expressions and function declarations, 
+  // Class: Classes are in fact "special functions", and just as you can define function expressions and function declarations,
   // the class syntax has two components: class expressions and class declarations.
   function Item(name, price, count) {
     this.name = name;
@@ -878,7 +888,7 @@ $(".show-cart").on("click", ".plus-item", function (event) {
 });
 
 // Item count input
-// The . val() method is primarily used to get the values of form elements such as input , select and textarea . 
+// The . val() method is primarily used to get the values of form elements such as input , select and textarea .
 $(".show-cart").on("change", ".item-count", function (event) {
   var name = $(this).data("name");
   var count = Number($(this).val());
@@ -889,8 +899,10 @@ $(".show-cart").on("change", ".item-count", function (event) {
 displayCart();
 
 const init = () => {
-  switch (document.location.pathname) {
-    case "/about.html":
+  // switch (document.location.pathname)
+  var fileName = document.location.pathname.split("/").splice(-1)[0];
+  switch (fileName) {
+    case "about.html":
       colorMap();
       mapHover("#TN");
       mapHover("#NY");
@@ -906,21 +918,20 @@ const init = () => {
       mapClick("#IL");
       funFactsButtonClick();
       break;
-    case "/shop.html":
+    case "shop.html":
       buildProductCards(allJeans);
       showSliderValue();
       filterButtonClick();
       applyButtonClick();
       break;
-    case "/index.html":
+    case "":
+    case "index.html":
       buildJeanImageCollage(collageOfJeans);
       window.onload = showModal();
       modalButtonEventClick();
       iWantMyDiscountButton();
       break;
-     }
+  }
 };
 
-
 init();
-
