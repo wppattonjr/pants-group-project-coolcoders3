@@ -4,15 +4,22 @@
 This website showcases the products available from a new jean company for women, called Spill the Jeans. Therea are 4 pages, each with a specific purpose. Features of each page are shown below.
 
 - Home: Showcases products available in an image grid. Each image links to the shop page.
+![Home Page](/images/home-page.png)
+
 - Shop: Allows the user to see all available products and filter according to needs.
+![Shop Page](/images/shop-page.png)
+
 - About: Describes the history of the company, shows locations on a map, and allows the user to cycle through fun facts about jeans.
+![About Page](/images/about-page.png)
+
 - Checkout: User can add items to their cart, view their cart, and clear their cart.
+![Checkout Page](/images/checkout-page.png)
 
 # Wireframes/prototype
 Our wireframes can be found [here](https://www.figma.com/proto/MtnQzldVyXL165xhFAsRzf/Pants-Project?node-id=1%3A2&scaling=min-zoom).
 
 # Deployed project link
-Live view of website can be found [here](). 
+Live view of website can be found [here](https://spillthejeans.netlify.app/index.html). 
 
 # Project board link
 You can see our project workflow [here](https://github.com/nss-evening-cohort-13/pants-group-project-coolcoders3/projects/2) on our GitHub project board.
