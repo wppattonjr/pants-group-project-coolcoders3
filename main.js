@@ -447,7 +447,11 @@ const buildProductCards = (arr) => {
   let domString = "";
 
   for (let i = 0; i < arr.length; i++) {
-    domString += `<div class="card m-4" style="width: 18rem;">
+
+    domString += `<div class="card m-4 navCustom shadow" style="width: 18rem;">
+
+    domString += `<div class="card m-4 navCustom shadow" style="width: 18rem;">
+
                         <img src="${
                           arr[i].imageUrl
                         }" class="card-img-top" alt="${arr[i].name}">
@@ -512,16 +516,16 @@ const buildLocationModal = (e) => {
   let modalString = "";
   for (let i = 0; i < locations.length; i++) {
     if (locationId === locations[i].id) {
-      modalString += `<div class="modal  text-center" id="locationModal" tabindex="-1" role="dialog">
+      modalString += `<div class="modal text-center" id="locationModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content customModal">
           <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
           <h2>${locations[i].city}</h2>  
           <img class="modal-content img-responsive" src="${locations[i].imageUrl}" alt="${locations[i].city} Storefront">
-            <p>${locations[i].address}</p>
+            <p class="mt-2">${locations[i].address}</p>
             <h5>Hours</h5>
             <p>Weekdays: ${locations[i].hours.weekdays}</p>
             <p>Weekends: ${locations[i].hours.weekends}</p>
