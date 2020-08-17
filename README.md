@@ -2,10 +2,18 @@
 
 # Overview of the project
 This website showcases the products available from a new jean company for women, called Spill the Jeans. Therea are 4 pages, each with a specific purpose. Features of each page are shown below.
+
 - Homepage: Showcases products available in an image grid. Each image links to the shop page.
+![Homepage](images/homepage-gif.mp4)
+
 - Shop: Allows the user to see all available products and filter according to needs.
+![Shop](images/shop-gif.mp4)
+
 - About: Describes the history of the company, shows locations on a map, and allows the user to cycle through fun facts about jeans.
+![About](images/about-gif.mp4)
+
 - Checkout: User can add items to their cart, view their cart, and clear their cart.
+![Checkout](images/checkout-gif.mp4)
 
 # Wireframes/prototype
 Our wireframes can be found [here](https://www.figma.com/proto/MtnQzldVyXL165xhFAsRzf/Pants-Project?node-id=1%3A2&scaling=min-zoom).
