@@ -3,14 +3,15 @@
 # Overview of the project
 This website showcases the products available from a new jean company for women, called Spill the Jeans. Therea are 4 pages, each with a specific purpose. Features of each page are shown below.
 
-- Homepage: Showcases products available in an image grid. Each image links to the shop page.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qNK7WM5fFi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Home: Showcases products available in an image grid. Each image links to the shop page.
 - Shop: Allows the user to see all available products and filter according to needs.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iHvMIMcLXmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - About: Describes the history of the company, shows locations on a map, and allows the user to cycle through fun facts about jeans.
-[![About Page](http://img.youtube.com/vi/36FdAaQvA1o/0.jpg)](http://www.youtube.com/watch?v=36FdAaQvA1o)
 - Checkout: User can add items to their cart, view their cart, and clear their cart.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Ksl1oS2xBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![Home Page](http://img.youtube.com/vi/qNK7WM5fFi8/0.jpg)](http://www.youtube.com/watch?v=qNK7WM5fFi8)
+[![Shop Page](http://img.youtube.com/vi/iHvMIMcLXmg/0.jpg)](http://www.youtube.com/watch?v=iHvMIMcLXmg)
+[![About Page](http://img.youtube.com/vi/36FdAaQvA1o/0.jpg)](http://www.youtube.com/watch?v=36FdAaQvA1o)
+[![Checkout Page](http://img.youtube.com/vi/8Ksl1oS2xBk/0.jpg)](http://www.youtube.com/watch?v=8Ksl1oS2xBk)
 
 # Wireframes/prototype
 Our wireframes can be found [here](https://www.figma.com/proto/MtnQzldVyXL165xhFAsRzf/Pants-Project?node-id=1%3A2&scaling=min-zoom).
