@@ -14,8 +14,8 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand logo" href="index.html">Spill The Jeans</a>
+    <nav class="navbar navbar-expand-lg navCustom">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,14 +31,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link textCustom" href="shop.html">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link textCustom" href="about.html">About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="Checkout.html"
+            <a class="nav-link textActive textCustom" href="Checkout.html"
               >Checkout<span class="sr-only">(current)</span></a
             >
           </li>
@@ -50,84 +50,84 @@
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Checkout Page</h1>
+        <h1 class="display-4">Checkout</h1>
         <p class="lead"></p>
       </div>
     </div>
 
-    <div>
-      <div class="row">
-        <div class="col">
+    <div class="d-flex flex-row justify-content-center m-4">
+      <div>
+        <div>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn customBtn m-1"
             data-toggle="modal"
             data-target="#cart"
           >
             Cart (<span class="total-count"></span>)</button
-          ><button class="clear-cart btn btn-danger">Clear Cart</button>
+          ><button class="clear-cart btn btn-danger m-1">Clear Cart</button>
         </div>
       </div>
     </div>
 
     <!-- Main -->
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">Mid Rise Skinny Jeans</h4>
               <p class="card-text">Price: $49.95</p>
               <a
                 href="#"
                 data-name="skinny jeans"
                 data-price="49.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">High Rise Skinny Jeans</h4>
               <p class="card-text">Price: $79.95</p>
               <a
                 href="#"
                 data-name="skinny jeans2"
                 data-price="79.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">Mid Rise Distressed Jeans</h4>
               <p class="card-text">Price: $89.95</p>
               <a
                 href="#"
                 data-name="distressed jeans"
                 data-price="89.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">High Rise Distressed Jeans</h4>
               <p class="card-text">Price: $79.95</p>
               <a
                 href="#"
                 data-name="distressed jeans2"
                 data-price="89.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
@@ -135,15 +135,15 @@
         </div>
 
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">High Rise Flare Jeans</h4>
               <p class="card-text">Price: $109.95</p>
               <a
                 href="#"
                 data-name="flare jeans"
                 data-price="89.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
@@ -151,15 +151,15 @@
         </div>
 
         <div class="col">
-          <div class="card" style="width: 20rem;">
-            <div class="card-block">
+          <div class="card m-2 navCustom shadow" style="width: 20rem;">
+            <div class="card-block p-3">
               <h4 class="card-title">Mid Rise Flare Jeans</h4>
               <p class="card-text">Price: $89.95</p>
               <a
                 href="#"
                 data-name="flare jeans2"
                 data-price="89.95"
-                class="add-to-cart btn btn-primary"
+                class="add-to-cart btn customBtn"
                 >Add to cart</a
               >
             </div>
@@ -207,7 +207,12 @@
         </div>
       </div>
     </div>
-
+    <nav class="footer">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
+        <div class="footerCopyright">
+        <p>&copy; 2020 Cool Coders Group III, LLC (Autumn, Kaitlyn, Sam, & Wendell) | Privacy Policy | Do Not Sell My Info | A Evening Cohort Lucky Number 13 Group Project | Your Tennessee Privacy Rights | Terms of Use</p>
+        </div>
+    </nav>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,10 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  margin: 0;
   background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
+.navCustom {
+  background-color: #FCEADE;
+}
 
+.textCustom {
+  color: black;
+}
+.whiteText {
+  color: white;
+}
+.textActive {
+  font-size: larger;
+}
+
+h1 {
+  font-family: "Lora", serif;
+}
 .logo {
   font-family: "Lora", serif;
+}
+
+.jumbotron {
+  background-color: #25CED1;
+  color: white;
+}
+
+.customBtn {
+  background-color: #25CED1;
+}
+
+.footer {
+  background-color: #FF8A5B;
+  bottom: 0;
 }
 
 #jeanCollage {
@@ -139,11 +174,6 @@ h6 {
 
 .show-cart li {
   display: flex;
-}
-
-.card-block {
-  border-style: solid;
-  border-color: #ff8a5b;
 }
 
 .display-4 {

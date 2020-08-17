@@ -10,13 +10,16 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand logo" href="index.html">Spill The Jeans</a>
+    <nav class="navbar navbar-expand-lg navCustom">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,22 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="shop.html"
+            <a class="nav-link textCustom" href="shop.html"
               >Shop<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html">About</a>
+            <a class="nav-link textCustom textActive" href="about.html">About</a>
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="Checkout.html"
-              tabindex="-1"
-              aria-disabled="true"
-              >Checkout</a
-            >
+            <a class="nav-link textCustom" href="Checkout.html">Checkout</a>
           </li>
         </ul>
       </div>
@@ -385,9 +382,9 @@
         </div>
       </div>
       <div class="historyAbout">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron2 jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4 text-center">Spill the Jeans | History</h1>
+            <h2 class="display-4 text-center">Spill the Jeans | History</h2>
             <p class="lead text-justify">
               Spill the Jeans is a fictional jeans company created for the
               purpose of demonstrating NSS students' skills as developers. In
@@ -424,7 +421,7 @@
         <div class="factsButtonAbout d-flex flex-column align-items-center">
           <button
             type="button"
-            class="btn btn-outline-danger m-3 align-self-center"
+            class="btn btn-outline-danger m-3 align-self-center btn-danger"
             id="factsButtonAbout"
           >
             Fun Facts
@@ -436,6 +433,17 @@
         <div id="factsCardAbout"></div>
       </div>
     </main>
+    <nav class="footer">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
+      <div class="footerCopyright">
+        <p>
+          &copy; 2020 Cool Coders Group III, LLC (Autumn, Kaitlyn, Sam, &
+          Wendell) | Privacy Policy | Do Not Sell My Info | A Evening Cohort
+          Lucky Number 13 Group Project | Your Tennessee Privacy Rights | Terms
+          of Use
+        </p>
+      </div>
+    </nav>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
