@@ -416,8 +416,6 @@ const iWantMyDiscountButton = () => {
     custEmail: customerEmail,
   };
   customerEmailFromModal.push(emailInput);
-  console.log();
-  console.log("EmailtoArray: Email", customerEmailFromModal);
   $("#couponModal").modal("hide");
 };
 
