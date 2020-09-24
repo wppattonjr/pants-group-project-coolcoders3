@@ -1,7 +1,7 @@
 # Week 5 - PANTS GROUP PROJECT
 
 # Overview of the project
-This website showcases the products available from a new jean company for women, called Spill the Jeans. Therea are 4 pages, each with a specific purpose. Features of each page are shown below.
+This website showcases the products available from a new jean company for women, called Spill the Jeans. There are 4 pages, each with a specific purpose. Features of each page are shown below.
 
 - Home: Showcases products available in an image grid. Each image links to the shop page.
 ![Home Page](/images/home-page.png)
